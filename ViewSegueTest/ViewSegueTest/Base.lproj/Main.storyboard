@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="300" id="ROm-5y-0HX"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9h-2Q-jWW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9h-2Q-jWW">
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,6 +46,8 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="kMY-qj-f3f" secondAttribute="centerX" id="Wu2-0N-RoQ"/>
                             <constraint firstAttribute="centerY" secondItem="kMY-qj-f3f" secondAttribute="centerY" id="oOo-hW-NAm"/>
+                            <constraint firstAttribute="centerX" secondItem="j9h-2Q-jWW" secondAttribute="centerX" id="s9D-5C-FjW"/>
+                            <constraint firstAttribute="centerY" secondItem="j9h-2Q-jWW" secondAttribute="centerY" id="zVl-Lj-O3r"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -63,10 +65,26 @@
                     <view key="view" contentMode="scaleToFill" id="2ta-k6-N38">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-qq-NId">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6hL-8x-kXc" kind="unwind" unwindAction="unwindToModalViewController:" id="hHt-Vs-G9f"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="1FT-qq-NId" secondAttribute="centerY" id="8aL-EP-ymZ"/>
+                            <constraint firstAttribute="centerX" secondItem="1FT-qq-NId" secondAttribute="centerX" id="wbP-cm-SBr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpN-r2-2ls" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6hL-8x-kXc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="963" y="370"/>
         </scene>

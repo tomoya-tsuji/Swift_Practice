@@ -13,6 +13,7 @@
 		CD226D1D1B57991A006897BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD226D1C1B57991A006897BE /* Images.xcassets */; };
 		CD226D201B57991A006897BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD226D1E1B57991A006897BE /* LaunchScreen.xib */; };
 		CD226D2C1B57991A006897BE /* SegueViewWithoutStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD226D2B1B57991A006897BE /* SegueViewWithoutStoryboardTests.swift */; };
+		CD226D361B579C01006897BE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD226D351B579C01006897BE /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CD226D251B57991A006897BE /* SegueViewWithoutStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SegueViewWithoutStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD226D2A1B57991A006897BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD226D2B1B57991A006897BE /* SegueViewWithoutStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueViewWithoutStoryboardTests.swift; sourceTree = "<group>"; };
+		CD226D351B579C01006897BE /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				CD226D151B57991A006897BE /* AppDelegate.swift */,
 				CD226D171B57991A006897BE /* ViewController.swift */,
+				CD226D351B579C01006897BE /* ModalViewController.swift */,
 				CD226D191B57991A006897BE /* Main.storyboard */,
 				CD226D1C1B57991A006897BE /* Images.xcassets */,
 				CD226D1E1B57991A006897BE /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD226D181B57991A006897BE /* ViewController.swift in Sources */,
+				CD226D361B579C01006897BE /* ModalViewController.swift in Sources */,
 				CD226D161B57991A006897BE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

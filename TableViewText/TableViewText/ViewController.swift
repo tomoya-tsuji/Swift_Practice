@@ -8,18 +8,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class ViewController: UITableViewController {
+    
+    let groupNames = ["ビートルズ","レッド・ツェッペリン"]
+    let groups = [
+        ["ジョンレノン","ポールマッカートニ","ジョージハリスン","リンゴスター"],
+        ["ジミーペイジ","ロバートプラント","ジョンポールジョーンズ","ジョンボーナム"]
+    ]
+    
+    
+    //sectionの数を返す処理
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return self.groupNames.count
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //sectionに表示するrowの数を返す処理
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.groups[section].count
     }
-
-
+    
+    //セルの表示内容をセットする
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+        cell.textLabel?.text = self.groups[indexPath.section][indexPath.row]
+        return cell
+    }
+    
 }
 

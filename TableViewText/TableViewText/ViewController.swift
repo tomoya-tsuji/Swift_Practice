@@ -34,5 +34,20 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    //sectionに表示するヘッダーの表示内容を設定する処理
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView{
+        var view = tableView.dequeueReusableHeaderFooterViewWithIdentifier("Header")
+          as? UITableViewHeaderFooterView
+        if view == nil{
+          view = UITableViewHeaderFooterView(reuseIdentifier: "Header")
+        }
+        view!.textLabel.text = self.groupNames[section]
+        return view!
+    }
+    //headerの高さを設定する
+    override func tableView(tableView: UITableView, heightForHeaderInSection section:Int) -> CGFloat{
+        return 44
+    }
+    
 }
 

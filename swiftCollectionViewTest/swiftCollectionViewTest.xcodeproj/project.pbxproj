@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0A50DF1B6B73DC009D0579 /* mario@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD0A50DE1B6B73DC009D0579 /* mario@2x.png */; };
 		CD5F47721B632CAE0005BE4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F47711B632CAE0005BE4A /* AppDelegate.swift */; };
 		CD5F47741B632CAE0005BE4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5F47731B632CAE0005BE4A /* ViewController.swift */; };
 		CD5F47771B632CAE0005BE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5F47751B632CAE0005BE4A /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD0A50DE1B6B73DC009D0579 /* mario@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mario@2x.png"; sourceTree = "<group>"; };
 		CD5F476C1B632CAE0005BE4A /* swiftCollectionViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftCollectionViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD5F47701B632CAE0005BE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD5F47711B632CAE0005BE4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		CD5F476F1B632CAE0005BE4A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CD0A50DE1B6B73DC009D0579 /* mario@2x.png */,
 				CD5F47701B632CAE0005BE4A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD5F47771B632CAE0005BE4A /* Main.storyboard in Resources */,
+				CD0A50DF1B6B73DC009D0579 /* mario@2x.png in Resources */,
 				CD5F477C1B632CAE0005BE4A /* LaunchScreen.xib in Resources */,
 				CD5F47791B632CAE0005BE4A /* Images.xcassets in Resources */,
 			);
@@ -409,6 +413,7 @@
 				CD5F478D1B632CAE0005BE4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD5F478E1B632CAE0005BE4A /* Build configuration list for PBXNativeTarget "swiftCollectionViewTestTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				CD5F47901B632CAE0005BE4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
